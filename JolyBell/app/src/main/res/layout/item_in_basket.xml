@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/item_in_basket_view_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- Delimiter -->
+        <RelativeLayout
+            android:id="@+id/item_in_basket_delimiter"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_gray_light"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp">
+
+
+                <!-- Image -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="15dp">
+                    <ImageView
+                        android:id="@+id/item_in_basket_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/item_1"
+                        android:transitionName="itemTransitionImg"
+                        android:padding="15dp"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp">
+
+                    <!-- Name -->
+                    <TextView
+                        android:id="@+id/item_in_basket_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B.O.M.J Black"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <!-- Space -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                    <!-- Size -->
+                    <LinearLayout
+                        android:id="@+id/item_size_block"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/size"
+                            android:textColor="@color/text_gray_dark"/>
+                        <TextView
+                            android:id="@+id/item_in_basket_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="XL"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <!-- Count -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/count"
+                        android:textColor="@color/text_gray_dark"/>
+                    <TextView
+                        android:id="@+id/item_in_basket_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@color/black"/>
+
+                    <!-- Cost -->
+                    <TextView
+                        android:id="@+id/item_in_basket_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1 750 RUB"
+                        android:textSize="8pt"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/item_in_basket_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/item_design"
+                android:elevation="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="X"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

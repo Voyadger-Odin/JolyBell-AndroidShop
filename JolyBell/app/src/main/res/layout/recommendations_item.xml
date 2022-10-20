@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Image -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <RelativeLayout
+                android:id="@+id/item_gradient"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/radial_gradient"/>
+            <ImageView
+                android:id="@+id/recommendation_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/item_1"/>
+        </RelativeLayout>
+
+        <!-- Cost -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/recommendation_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_design"
+                android:text="1 750 RUB"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="8pt"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"/>
+        </RelativeLayout>
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/recommendation_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B.O.M.J Black"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="9pt"
+            android:layout_margin="10dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

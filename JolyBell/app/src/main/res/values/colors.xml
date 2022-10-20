@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="fon_dark_grey">#0d0d0e</color>
+    <color name="text_gray_dark">#616060</color>
+    <color name="text_gray_light">#bfbfbf</color>
+
+    <color name="catalog_background">#eee</color>
+
+    <color name="alert_fon">#b000</color>
+
+    <color name="radial_gradient_start">#ff777777</color>
+    
+    <!-- Alert -->
+    <color name="alert_table_text">#333</color>
+    <color name="table_line_1">#eee</color>
+    <color name="table_line_2">#e1e1e1</color>
+</resources>

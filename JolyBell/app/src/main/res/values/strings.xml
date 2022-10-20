@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">JolyBell</string>
+
+    <integer name="animation_alert_speed">250</integer>
+    <integer name="animation_item_vis_speed">300</integer>
+
+    <!-- Buttons name -->
+    <string name="main_page">О нас</string>
+    <string name="calatog">Каталог</string>
+    <string name="basket">Корзина</string>
+    <string name="profil">Профиль</string>
+
+    <!-- Devis -->
+    <string name="devis_1">ЕСТЬ ТОЛЬКО </string>
+    <string name="devis_2">БЕЛЫЙ</string>
+    <string name="devis_3"> И ЧЁРНЫЙ.</string>
+    <string name="devis_4">ОСТАЛЬНОЕ - ОТТЕНКИ.</string>
+
+    <!-- Info -->
+    <string name="e_mail">E-MAIL:</string>
+    <string name="e_mail_data">support@jolybell.com</string>
+    <string name="support">ВРЕМЯ РАБОТЫ СЛУЖБЫ ПОДДЕРЖКИ:</string>
+    <string name="support_data">ПН-ПТ: 9:00 - 21:00</string>
+    <string name="deliver_1">Доставка по России осуществляется службами доставки: «Почта России».</string>
+    <string name="deliver_2">«Почта России» осуществляет доставку до почтового отделения, индекс которого Вы укажите при оформлении заказа.</string>
+    <string name="shop_name">© 2021, JolyBell.com</string>
+    <string name="public_ofert">Публичная оферта</string>
+    <string name="take_maney">ПРИНИМАЕМ К ОПЛАТЕ:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Item description to by -->
+    <string name="select_size">Выберите размер:</string>
+    <string name="size">Размер:</string>
+    <string name="btn_add_to_basket">Добавить в корзину</string>
+    <string name="count">Количество:</string>
+    <string name="size_chart">РАЗМЕРНАЯ СЕТКА</string>
+    <string name="care_of_the_thing">УХОД ЗА ВЕЩЬЮ</string>
+    <string name="care_of_the_thing_title">Стандартные правила ухода:</string>
+    <string name="recomendation_1">РЕКОМЕНДУЕМ К </string>
+    <string name="recomendation_2">ПОКУПКЕ</string>
+
+
+    <!-- Basket -->
+    <string name="empty_basket">Корзина пустая</string>
+    <string name="empty_basket_description">Добавьте товары из каталога</string>
+
+    <string name="promo_code">Промокод</string>
+    <string name="apply">Применить</string>
+    <string name="cost_result">Итого:</string>
+    <string name="checkout">Оформить заказ</string>
+    <string name="my_purchases">Мои покупки</string>
+    <string name="cost_of_goods">Стоимость товаров:</string>
+    <string name="cost_of_delivery">Стоимость доставки:</string>
+
+
+    <string name="alert_size_chart_comment">Допустимо отклонение в длину и ширину (±) на 1-2 см.</string>
+
+    <string name="item_1_description">Тонкая. Легкая. Черная.
+<br /><br />
+Футболка линейки B.O.M.J - первая единица контрбрендовой линии одежды. Потрясающие качество в совместительстве с уточненным подходом к деталям, которым не могут похвастаться именитые раздутые фирмы.
+<br /><br />
+Ткань сорта пенье
+<br /><br />
+Состав: 95% cotton, 5% spandex. Плотность 170 г/м²</string>
+
+    <string name="care_of_the_thing_data">Стирать в вывернутом состоянии, только в стиральной машине, деликатный режим, до 40 градусов, не выше 600 об/мин, не использовать машинную сушку, сушить только на вешалке, без попадания солнечных лучей на ткань. Принт утюгом не
+гладить.</string>
+
+
+    <!-- Alert size chart T-shirt -->
+    <string name="alert_size_chart_t_shirt">
+        <p>Как правильно выбрать размер</p>
+<p></p>
+Выбираете вашу футболку/свитшот/худи и замеряете метром
+<br /><br /><br />
+Ширина на размерной сетке указана буквой А, меряете под подмышками, от шва до шва, как показано красной линией.
+<br /><br /><br />
+Длина на размерной сетке указана буквой B, меряете от горловины и до самого низа вещи, как показано красной линией.
+<br /><br /><br />
+Длина рукава на размерной сетке указана буквой С, если это свитшот или худи, меряете от горловины и до самого конца рукава, если футболка, то как показано красной линией.
+<br /><br /><br />
+Далее сравниваете ваши показатели с нашей таблицей размеров, прикинув плюс/минус пару сантиметров и выбираете размер.</string>
+</resources>

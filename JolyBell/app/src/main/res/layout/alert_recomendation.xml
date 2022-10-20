@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/btn_alert_care_of_the_thing_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="12dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_close_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+        <TextView
+            android:id="@+id/alert_care_of_the_thing_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/care_of_the_thing_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10pt"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/alert_care_of_the_thing_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/care_of_the_thing_data"
+            android:textAlignment="center"
+            android:textColor="@color/text_gray_dark"
+            android:textSize="8pt"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/botton_navigation_menu"
+    app:startDestination="@id/mainPageFragment">
+
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.voyager.jolybell.MainPageFragment"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" />
+    <fragment
+        android:id="@+id/calatogPageFragment"
+        android:name="com.voyager.jolybell.calatogPageFragment"
+        android:label="fragment_calatog_page"
+        tools:layout="@layout/fragment_calatog_page" />
+    <fragment
+        android:id="@+id/basketPageFragment"
+        android:name="com.voyager.jolybell.basketPageFragment"
+        android:label="fragment_basket_page"
+        tools:layout="@layout/fragment_basket_page" />
+    <fragment
+        android:id="@+id/profilPageFragment"
+        android:name="com.voyager.jolybell.profilPageFragment"
+        android:label="fragment_profil_page"
+        tools:layout="@layout/fragment_profil_page" />
+</navigation>

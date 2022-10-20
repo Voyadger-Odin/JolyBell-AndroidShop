@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/size_item_fon"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:background="@drawable/btn_size_dark"
+    android:layout_margin="2dp">
+
+    <TextView
+        android:id="@+id/text_size_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="XL"
+        android:textSize="4pt"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+</RelativeLayout>

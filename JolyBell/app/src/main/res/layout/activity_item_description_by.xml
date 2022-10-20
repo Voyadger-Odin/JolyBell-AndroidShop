@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDescriptionBy"
+    android:background="@color/black"
+    android:id="@+id/item_description_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/item_description_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B.O.M.J Black"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12pt"
+                android:layout_margin="10dp"
+                android:textStyle="bold"/>
+
+            <!-- Image -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <RelativeLayout
+                    android:id="@+id/item_description_gradient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/radial_gradient"/>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/item_description_galery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foregroundGravity="center"/>
+
+                <ImageView
+                    android:id="@+id/item_description_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/item_1"
+                    android:padding="15dp"
+                    android:transitionName="itemTransitionImg"/>
+
+                <!-- Gradient -->
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_left_background"/>
+                    <RelativeLayout
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"/>
+                    <RelativeLayout
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_right_background"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Points galery -->
+            <RelativeLayout
+                android:id="@+id/item_description_points_galery_obj"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/galery_count"
+                    tools:listitem="@layout/point_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:spanCount="3"
+                    />
+            </RelativeLayout>
+
+            <!-- Cost -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/item_description_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_design"
+                    android:text="1 750 RUB"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="8pt"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+            </RelativeLayout>
+
+            <!-- Description -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="15dp">
+                <TextView
+                    android:id="@+id/item_description_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="8pt"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/dress_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Size chart -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp">
+                    <TextView
+                        android:id="@+id/item_description_size_chart"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/size_chart"
+                        android:textColor="@color/text_gray_dark"
+                        android:textAlignment="center"
+                        android:textSize="7pt"
+                        android:background="@drawable/btn_about_item"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"/>
+                </RelativeLayout>
+
+                <!-- Description -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="15dp">
+                    <TextView
+                        android:id="@+id/item_description_care_of_the_thing"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/care_of_the_thing"
+                        android:textColor="@color/text_gray_dark"
+                        android:textAlignment="center"
+                        android:textSize="7pt"
+                        android:background="@drawable/btn_about_item"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <!-- Select size -->
+            <LinearLayout
+                android:id="@+id/item_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_size"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_gray_dark"
+                    android:textSize="8pt"
+                    android:layout_marginBottom="10dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/item_size_list"
+                        tools:listitem="@layout/size_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:spanCount="3"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Items count -->
+            <LinearLayout
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/count"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_gray_dark"
+                    android:textSize="8pt"
+                    android:layout_marginBottom="10dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/item_description_sub"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/btn_desibn_left_radius"
+                        android:text="-"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="8pt"/>
+                    <TextView
+                        android:id="@+id/item_description_count"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:textSize="8pt"/>
+                    <TextView
+                        android:id="@+id/item_description_add"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/btn_desibn_right_radius"
+                        android:text="+"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="8pt"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/itemsToAddInBasket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Add to basket -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+                    <RelativeLayout
+                        android:id="@+id/item_description_add_to_basket_fon"
+                        android:layout_width="250dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/item_design">
+                        <TextView
+                            android:id="@+id/item_description_add_to_basket"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/btn_add_to_basket"
+                            android:textColor="@color/black"
+                            android:textSize="8pt"
+                            android:gravity="center" />
+                        <RelativeLayout
+                            android:id="@+id/item_description_preloader"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <!-- Dark -->
+                            <ProgressBar
+                                android:id="@+id/item_description_preloader_item_dark"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"/>
+                            <!-- Light -->
+                            <ProgressBar
+                                android:visibility="gone"
+                                android:id="@+id/item_description_preloader_item_light"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:theme="@style/AppTheme.WhiteAccent" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <!-- Space -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+                <!-- Recommendations -->
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:id="@+id/item_description_recomendation_text_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/recomendation_1"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="10pt"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:id="@+id/item_description_recomendation_text_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/recomendation_2"
+                        android:textColor="@color/black"
+                        android:background="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="10pt"
+                        android:padding="10dp"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="20dp">
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/recommendations_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foregroundGravity="center"/>
+                    <LinearLayout
+                        android:id="@+id/item_description_recomendation_gradient"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <RelativeLayout
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/gradient_left_background"/>
+                        <RelativeLayout
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"/>
+                        <RelativeLayout
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/gradient_right_background"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recommendations_points_count"
+                        tools:listitem="@layout/point_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:spanCount="3"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- Space -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- Alert care of the thing -->
+    <RelativeLayout
+        android:id="@+id/alert_care_of_the_thing"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/alert_fon">
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/alert_dialog"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Space -->
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <RelativeLayout
+                    android:id="@+id/alert_dialog_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/item_design">
+
+                    <!-- Put alert item -->
+
+                </RelativeLayout>
+                <!-- Space -->
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
